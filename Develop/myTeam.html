@@ -1,0 +1,59 @@
+function promptUser (){
+    return inquirer.prompt([
+        {
+            type: "input",
+            name: "name",
+            message: "What is your name?"
+          },
+          {
+            type: "input",
+            name: "id",
+            message: "What is your id?"
+          },
+          {
+            type: "input",
+            name: "email",
+            message: "What is your email?"
+          },
+          {
+            type: "list",
+            name: "role",
+            message: "Your role?",
+            choices: [
+              "Engineer",
+              "Manager",
+              "Intern"
+            ]
+          },
+          {
+            type: "input",
+            name: "github",
+            message: "What is your Github account?",
+          
+          },
+          {
+            type: "input",
+            name: "school",
+            message: "What school did you attend?",
+        
+          },
+          {
+            type: "input",
+            name: "phoneNumber",
+            message: "Please enter your phone number?",
+           
+          },
+      
+      
+          {
+              type: "list",
+              name: "addEmployee",
+              message: "Add employee?",
+              choices: [
+                "Y",
+                "N"
+              ]
+            }
+
+    ])
+}
