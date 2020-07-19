@@ -68,8 +68,6 @@ function promptUser (){
                 "N"
               ]
             }
-            
-
     ])
     
 }
